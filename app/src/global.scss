@@ -1,0 +1,79 @@
+@import "@ionic/angular/css/core.css";
+@import "@ionic/angular/css/normalize.css";
+@import "@ionic/angular/css/structure.css";
+@import "@ionic/angular/css/typography.css";
+@import "@ionic/angular/css/display.css";
+@import "@ionic/angular/css/padding.css";
+@import "@ionic/angular/css/float-elements.css";
+@import "@ionic/angular/css/text-alignment.css";
+@import "@ionic/angular/css/text-transformation.css";
+@import "@ionic/angular/css/flex-utils.css";
+
+* { font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif; }
+
+ion-content  { --background: #09090b; }
+ion-toolbar  { --background: #111111; --color: #ffffff; --border-color: #27272a; }
+ion-list     { background: transparent !important; }
+ion-searchbar { --background: #18181b; --color: #fff; --placeholder-color: #52525b; }
+ion-segment  { --background: #18181b; }
+ion-segment-button { --color: #71717a; --color-checked: #0d9488; }
+
+.dark-bg { --background: #09090b; }
+.p16     { padding: 16px; }
+
+.stat-card {
+  background: #111111;
+  border: 1px solid #27272a;
+  border-radius: 16px;
+  padding: 16px;
+  text-align: center;
+  &.teal   { border-color: rgba(13,148,136,.35); .sv { color: #0d9488; } }
+  &.blue   { border-color: rgba(59,130,246,.35);  .sv { color: #3b82f6; } }
+  &.amber  { border-color: rgba(245,158,11,.35);  .sv { color: #f59e0b; } }
+  &.purple { border-color: rgba(168,85,247,.35);  .sv { color: #a855f7; } }
+  .si { font-size: 26px; margin-bottom: 6px; }
+  .sv { font-size: 26px; font-weight: 700; }
+  .sl { font-size: 11px; color: #71717a; text-transform: uppercase; letter-spacing: .08em; }
+  .ss { font-size: 11px; color: #3f3f46; margin-top: 2px; }
+}
+
+.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 24px; }
+
+.sec-title {
+  font-size: 11px; font-weight: 700; color: #52525b;
+  text-transform: uppercase; letter-spacing: .1em; margin-bottom: 10px;
+  &.mt { margin-top: 20px; }
+}
+
+.list-item {
+  --background: #111111;
+  --border-radius: 14px;
+  margin-bottom: 8px;
+  border: 1px solid #27272a;
+  border-radius: 14px;
+  h2 { color: #ffffff; font-size: 14px; font-weight: 600; }
+  p  { color: #71717a; font-size: 12px; }
+}
+
+.avatar {
+  width: 40px; height: 40px;
+  background: #0d9488; border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  color: #fff; font-weight: 700; font-size: 18px; flex-shrink: 0;
+}
+
+.pedido-card {
+  background: #111111; border: 1px solid #27272a;
+  border-radius: 16px; padding: 14px 16px; margin-bottom: 10px;
+  .head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px; }
+  .pid  { font-family: monospace; color: #0d9488; font-size: 13px; font-weight: 700; }
+  .cli  { color: #fff; font-size: 14px; font-weight: 600; }
+  .inf  { color: #71717a; font-size: 12px; margin-top: 2px; }
+  .acoes { display: flex; gap: 8px; margin-top: 10px; }
+}
+
+.center { display: flex; justify-content: center; padding: 48px; }
+.empty  { text-align: center; color: #52525b; font-size: 14px; padding: 32px 0; }
+
+.end-col { display: flex; flex-direction: column; align-items: flex-end; gap: 4px; }
+.valor   { color: #0d9488; font-size: 13px; font-weight: 700; }

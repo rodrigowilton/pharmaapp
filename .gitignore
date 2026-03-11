@@ -1,0 +1,20 @@
+# Node
+node_modules/
+npm-debug.log*
+
+# Angular/Ionic build
+www/
+dist/
+.angular/
+
+# Capacitor
+android/
+ios/
+
+# Environment (não suba credenciais!)
+.env
+api/.env
+
+# OS
+.DS_Store
+Thumbs.db
