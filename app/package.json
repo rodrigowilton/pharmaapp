@@ -6,7 +6,7 @@
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
-    "ionic:serve": "ng serve --host=localhost --port=8100",
+    "ionic:serve": "ng serve --host=localhost --port=8080",
     "ionic:build": "ng build"
   },
   "dependencies": {
